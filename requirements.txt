@@ -1,0 +1,2 @@
+mdx-include
+mkdocs-include-markdown-plugin

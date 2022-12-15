@@ -1,1 +1,53 @@
-site_name: My Docs
+site_name: Bitzquad Nebula
+site_url: https://nebula.bitzquad.com
+nav:
+  - Home: index.md
+  - About: about.md
+theme:
+  name: material
+  highlightjs: true
+  font:
+    text: Inter
+  logo: img/logo-white.png
+  favicon: img/favicon.png
+  features:
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+
+copyright: >
+  Copyright &copy; Bitzquad PVT(LTD)
+
+repo_url: https://github.com/bitzquad/nebula
+repo_name: bitzquad/nebula
+edit_uri: edit/main/docs/
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - admonition
+  - abbr
+  - attr_list
+  - codehilite
+  - extra
+
+plugins:
+  - include-markdown
+  - search
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+  - css/neoteroi-mkdocs.css
+  - css/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@9.2.2/dist/mermaid.min.js
+  - js/termynal.js
+  - js/custom.js
+  # - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
